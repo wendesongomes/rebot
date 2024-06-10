@@ -1,0 +1,25 @@
+{
+  "name": "discord-cdn",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch --env-file .env src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "tsx": "^4.13.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.17.0",
+    "discord.js": "^14.15.3",
+    "libsodium-wrappers": "^0.7.13",
+    "ytdl-core": "^4.11.5",
+    "zod": "^3.23.8"
+  }
+}
