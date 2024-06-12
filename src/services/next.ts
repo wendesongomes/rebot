@@ -1,6 +1,6 @@
 import { AudioPlayer, AudioPlayerStatus, VoiceConnectionStatus, createAudioResource, joinVoiceChannel } from "@discordjs/voice";
 import { Message } from "discord.js";
-import ytdl from "ytdl-core";
+import ytdl from "@distube/ytdl-core";
 import { TQueue } from "../server";
 
 export async function next(player: AudioPlayer, queue: TQueue) {

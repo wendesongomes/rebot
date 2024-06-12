@@ -6,7 +6,7 @@ import {
   joinVoiceChannel,
 } from '@discordjs/voice'
 import { Message } from 'discord.js'
-import ytdl from 'ytdl-core'
+import ytdl from '@distube/ytdl-core'
 import { next } from '../next'
 import { TQueue } from '../../server'
 
