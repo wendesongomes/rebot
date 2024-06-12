@@ -1,4 +1,4 @@
-![Untitled-1](https://github.com/wendesongomes/rebot/assets/82889172/f9673845-5bdf-4028-b175-0f06471b4c50)
+![Untitled-1](https://github.com/wendesongomes/rebot/assets/82889172/e1e9df27-8a14-454b-8b77-9127bb22ed13)
 
 # Bot de musica para discord
 
