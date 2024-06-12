@@ -1,12 +1,12 @@
 {
   "name": "discord-cdn",
   "version": "1.0.0",
-  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch --env-file .env src/server.ts",
-    "start": "tsx --env-file .env src/server.ts"
+    "build": "tsc",
+    "start": "node --env-file .env src/server.js"
   },
   "keywords": [],
   "author": "",
