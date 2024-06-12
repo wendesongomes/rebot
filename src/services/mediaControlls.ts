@@ -1,10 +1,9 @@
 import { AudioPlayer } from "@discordjs/voice"
 import { client } from "../lib/client"
-import { Message } from "discord.js";
 import { next } from "./next";
 import { TQueue } from "../server";
 
-export function Controlls(player: AudioPlayer, queue: TQueue) {
+export function MediaControlls(player: AudioPlayer, queue: TQueue) {
   client.on('messageReactionAdd', async (reaction, user) => {
     if(user.bot) return
   

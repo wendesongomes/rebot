@@ -1,9 +1,10 @@
 import { env } from './lib/env'
 import { NoSubscriberBehavior, createAudioPlayer } from '@discordjs/voice'
 import { client } from './lib/client'
-import { Controlls } from './services/controlls'
 import { Music } from './services/commands/music'
 import { Message } from 'discord.js'
+import { gracefulShutdown } from './services/gracefulShutdown'
+import { MediaControlls } from './services/mediaControlls'
 
 export type TQueue = { link: string; message: Message }[]
 const queue: TQueue = [];
@@ -19,7 +20,10 @@ const player = createAudioPlayer({
   }
 })
 
-Controlls(player, queue)
+MediaControlls(player, queue)
+
+process.on('SIGINT', gracefulShutdown)
+process.on('SIGTERM', gracefulShutdown)
 
 client.on('messageCreate', async (message) => {
   Music(message, player, queue)
