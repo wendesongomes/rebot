@@ -3,6 +3,10 @@ import { NoSubscriberBehavior, createAudioPlayer } from '@discordjs/voice'
 import { client } from './lib/client'
 import { Controlls } from './services/controlls'
 import { Music } from './services/commands/music'
+import { Message } from 'discord.js'
+
+export type TQueue = { link: string; message: Message }[]
+const queue: TQueue = [];
 
 client.on('ready', () => {
   console.log('Ready!')
@@ -11,14 +15,14 @@ client.on('ready', () => {
 const player = createAudioPlayer({
   behaviors: {
     noSubscriber: NoSubscriberBehavior.Pause,
-    maxMissedFrames: 10,
+    maxMissedFrames: 100,
   }
 })
 
-Controlls(player)
+Controlls(player, queue)
 
 client.on('messageCreate', async (message) => {
-  Music(message, player)
+  Music(message, player, queue)
 })
 
 client.login(env.DISCORD_TOKEN)

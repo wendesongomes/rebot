@@ -1,7 +1,10 @@
 import { AudioPlayer } from "@discordjs/voice"
 import { client } from "../lib/client"
+import { Message } from "discord.js";
+import { next } from "./next";
+import { TQueue } from "../server";
 
-export function Controlls(player: AudioPlayer) {
+export function Controlls(player: AudioPlayer, queue: TQueue) {
   client.on('messageReactionAdd', async (reaction, user) => {
     if(user.bot) return
   
@@ -14,6 +17,10 @@ export function Controlls(player: AudioPlayer) {
   
       if(reaction.emoji.name === '▶️'){
         player.unpause()
+      }
+
+      if(reaction.emoji.name === '⏭️'){
+        next(player, queue)
       }
 
       if(reaction.emoji.name === '🛑'){
