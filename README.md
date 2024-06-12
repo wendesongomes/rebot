@@ -15,8 +15,6 @@ Este projeto surgiu a partir de uma conversa com amigos, onde mencionaram que mu
 
 Aqui estão alguns bugs que estou ciente e trabalhando para resolver:
 
-1. **Problema de reconhecimento de sala**: Quando o bot é iniciado e o usuário do Discord não está em nenhuma sala de voz, ele não reconhece quando o usuário entra em uma sala posteriormente. É necessário que o usuário entre na sala antes de iniciar o bot para que ele funcione corretamente.
-
 1. **Interrupção aleatória da reprodução de música**: Às vezes, o bot reproduz a música sem problemas, mas em outras ocasiões, ele para no início ou na metade da música. Nesses casos, é necessário reiniciar o bot para que ele volte a funcionar corretamente.
 
 ## Tecnologias Utilizadas.
