@@ -15,6 +15,10 @@ export function Controlls(player: AudioPlayer) {
       if(reaction.emoji.name === '▶️'){
         player.unpause()
       }
+
+      if(reaction.emoji.name === '🛑'){
+        player.stop()
+      }
     }
   })
 }
