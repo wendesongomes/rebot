@@ -22,7 +22,7 @@ Aqui estão alguns bugs que estou ciente e trabalhando para resolver:
 - `discord.js`
 - `@discordjs/voice`
 - `libsodium-wrappers`
-- `ytdl-core`
+- `@distube/ytdl-core`
 - `zod`
 - `@types/node`
 - `tsx`
