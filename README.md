@@ -6,7 +6,7 @@ Este projeto surgiu a partir de uma conversa com amigos, onde mencionaram que mu
 
 - [x]  - Entrar na sala
 - [x]  - Tocar Musica
-- [ ]  - Criar controles de musica (Somente o play, pause, stop e proximo esta criado)
+- [x]  - Criar controles de musica
 - [x]  - Criar uma fila de musicas
 - [ ]  - Tocar Playlist do youtube completa
 - [ ]  - Tocar musica do spotify
