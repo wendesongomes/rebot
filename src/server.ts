@@ -2,7 +2,7 @@ import { env } from './lib/env'
 import { NoSubscriberBehavior, createAudioPlayer } from '@discordjs/voice'
 import { client } from './lib/client'
 import { Music } from './services/commands/music'
-import { Message } from 'discord.js'
+import { ActivityType, Message } from 'discord.js'
 import { gracefulShutdown } from './services/gracefulShutdown'
 import { MediaControlls } from './services/mediaControlls'
 
@@ -11,6 +11,14 @@ const queue: TQueue = [];
 
 client.on('ready', () => {
   console.log('Ready!')
+
+    client.user?.setPresence({
+    activities: [{
+      name: 'musicas | !rplay <link>',
+      type: ActivityType.Listening,
+    }],
+    status: 'online',
+  })
 })
 
 const player = createAudioPlayer({

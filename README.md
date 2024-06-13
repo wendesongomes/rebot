@@ -63,5 +63,5 @@ npm run dev
 
 2. Convide o bot para o seu servidor usando o link gerado na página de desenvolvimento do Discord.
 
-3. Use o comando `!music link` para iniciar uma musica.
+3. Use o comando `!rplay <link>` para iniciar uma musica.
 

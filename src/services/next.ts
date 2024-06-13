@@ -61,7 +61,6 @@ export async function next(player: AudioPlayer, queue: TQueue) {
       }
     }, 1000);
 
-    await playingMessage.react('⏮️');
     await playingMessage.react('▶️');
     await playingMessage.react('⏸️');
     await playingMessage.react('⏭️');

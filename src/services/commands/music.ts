@@ -12,12 +12,12 @@ import { TQueue } from '../../server'
 
 export async function Music(message: Message, player: AudioPlayer, queue: TQueue) {
   if (message.guildId && message.guild && message.member) {
-    if (message.content.startsWith('!music')) {
+    if (message.content.startsWith('!rplay')) {
       const link = message.content.split(' ')[1]
 
       if (!link || !ytdl.validateURL(link)) {
         return message.reply(
-          'Você precisa fornecer um link do YouTube após o comando !music.',
+          'Você precisa fornecer um link do YouTube após o comando !rplay.',
         )
       }
 
