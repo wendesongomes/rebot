@@ -1,6 +1,6 @@
 ![Untitled-1](https://github.com/wendesongomes/rebot/assets/82889172/e1e9df27-8a14-454b-8b77-9127bb22ed13)
 
-# Bot de musica para discord
+# Rebot - Um bot de musica (OpenSource)
 
 Este projeto surgiu a partir de uma conversa com amigos, onde mencionaram que muitos bots de música para Discord estavam parando de funcionar. Como desenvolvedor, fiquei curioso sobre como criar um bot de música para Discord e decidi enfrentar o desafio. Consegui fazer um bot funcional que já consegue entrar em uma sala e tocar música. Ainda há muito a ser aprimorado, mas estou animado com o progresso até agora.
 
