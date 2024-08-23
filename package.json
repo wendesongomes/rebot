@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch --env-file .env src/server.ts",
-    "start": "tsx src/server.ts"
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,7 @@
   },
   "dependencies": {
     "@discordjs/voice": "^0.17.0",
-    "@distube/ytdl-core": "^4.13.7",
+    "@distube/ytdl-core": "^4.14.4",
     "discord.js": "^14.15.3",
     "libsodium-wrappers": "^0.7.13",
     "ytpl": "^2.3.0",
